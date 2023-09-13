@@ -59,5 +59,10 @@ echo "log-facility=/dev/null" >> /etc/dnsmasq.conf
 rm -rf /tmp/luci-modulecache/
 rm -f /tmp/luci-indexcache
 
+uci set network.lan.proto='static'                     
+uci set network.lan.type='bridge'                    
+uci set network.lan.ifname='eth1 eth2 eth3'     //我用的是J1900有四个网口，eth0为 wan，其余三个为 lan 口
+uci set network.wan.ifname='eth0'
+uci commit network
 
 exit 0
