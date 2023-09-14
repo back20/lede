@@ -40,6 +40,8 @@ I18N: [English](README_EN.md) | [简体中文](README.md)
    vim wget xmlto xxd zlib1g-dev python3-setuptools
    ```
 
+   你是在服务器环境编译的吗？可以尝试升级一下rust的版本， rustup update
+
 3. 下载源代码，更新 feeds 并选择配置
 
    ```bash
